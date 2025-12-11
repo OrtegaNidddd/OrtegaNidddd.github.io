@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+/* Default (seguirá el sistema) */
+:root {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  --dark-color: #1b1b1b;
+  --emphasis-color: #9333EA;
+  --app-bg-color: #05060a;
+  --app-bg-image: radial-gradient(circle at top, rgba(79, 70, 229, 0.3), transparent 45%),
+    radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.25), transparent 30%),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.95), rgba(2, 6, 23, 1));
+  --section-surface: linear-gradient(180deg, rgba(4, 7, 20, 0.98), rgba(2, 6, 23, 0.95));
+  --panel-surface: rgba(15, 23, 42, 0.65);
+  --panel-border: rgba(255, 255, 255, 0.08);
+  --panel-shadow: 0 35px 60px rgba(2, 6, 23, 0.65);
+  --text-primary: #f8fafc;
+  --text-muted: rgba(226, 232, 240, 0.78);
+  --card-surface: rgba(15, 23, 42, 0.85);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-shadow: 0 30px 55px rgba(2, 6, 23, 0.7);
+  --secondary-btn-border: rgba(255, 255, 255, 0.3);
+  --secondary-btn-text: rgba(248, 250, 252, 0.85);
+}
+
+/* Tema claro forzado */
+:root.light {
+  color-scheme: light;
+  color: #1F2937;
+  background-color: #F9FAFB;
+  --dark-color: #e5e5e6;
+  --emphasis-color: #9333EA;
+  --app-bg-color: #F9FAFB;
+  --app-bg-image: none;
+  --section-surface: #f5f7fb;
+  --panel-surface: #ffffff;
+  --panel-border: rgba(15, 23, 42, 0.08);
+  --panel-shadow: 0 30px 70px rgba(15, 23, 42, 0.08);
+  --text-primary: #0f172a;
+  --text-muted: rgba(15, 23, 42, 0.65);
+  --card-surface: #ffffff;
+  --card-border: rgba(15, 23, 42, 0.08);
+  --card-shadow: 0 20px 55px rgba(15, 23, 42, 0.08);
+  --secondary-btn-border: rgba(15, 23, 42, 0.2);
+  --secondary-btn-text: #0f172a;
+}
+
+/* Tema oscuro forzado */
+:root.dark {
+  color-scheme: dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  --dark-color: #1b1b1b;
+  --emphasis-color: #9333EA;
+  --app-bg-color: #05060a;
+  --app-bg-image: radial-gradient(circle at top, rgba(79, 70, 229, 0.3), transparent 45%),
+    radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.25), transparent 30%),
+    linear-gradient(180deg, rgba(2, 6, 23, 0.95), rgba(2, 6, 23, 1));
+  --section-surface: linear-gradient(180deg, rgba(4, 7, 20, 0.98), rgba(2, 6, 23, 0.95));
+  --panel-surface: rgba(15, 23, 42, 0.65);
+  --panel-border: rgba(255, 255, 255, 0.08);
+  --panel-shadow: 0 35px 60px rgba(2, 6, 23, 0.65);
+  --text-primary: #f8fafc;
+  --text-muted: rgba(226, 232, 240, 0.78);
+  --card-surface: rgba(15, 23, 42, 0.85);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --card-shadow: 0 30px 55px rgba(2, 6, 23, 0.7);
+  --secondary-btn-border: rgba(255, 255, 255, 0.3);
+  --secondary-btn-text: rgba(248, 250, 252, 0.85);
+}
+
+/* Si no hay preferencia, usa sistema */
+@media (prefers-color-scheme: light) {
+  :root:not(.dark):not(.light) {
+    color: #1F2937;
+    background-color: #F9FAFB;
+    --dark-color: #e5e5e6;
+    --app-bg-color: #F9FAFB;
+    --app-bg-image: none;
+    --section-surface: #f5f7fb;
+    --panel-surface: #ffffff;
+    --panel-border: rgba(15, 23, 42, 0.08);
+    --panel-shadow: 0 30px 70px rgba(15, 23, 42, 0.08);
+    --text-primary: #0f172a;
+    --text-muted: rgba(15, 23, 42, 0.65);
+    --card-surface: #ffffff;
+    --card-border: rgba(15, 23, 42, 0.08);
+    --card-shadow: 0 20px 55px rgba(15, 23, 42, 0.08);
+    --secondary-btn-border: rgba(15, 23, 42, 0.2);
+    --secondary-btn-text: #0f172a;
+  }
+}
+
+
+/*
+  - Fondo principal: #F9FAFB (gris muy claro, casi blanco)
+
+  - Fondo secciones alternas: #F1F5F9 (gris suave para separar bloques)
+
+  - Texto principal: #1F2937 (gris oscuro, buena legibilidad)
+
+  - Texto secundario: #4B5563 (gris medio)
+
+  - Color primario (acentos): #2563EB (azul moderno y vibrante)
+
+  - Color secundario (detalles): #9333EA (morado elegante)
+
+  - Énfasis / hover: #F43F5E (rosa fuerte, para resaltar acciones o enlaces)
+
+  - Bordes / líneas suaves: #E5E7EB (gris clarito)
+*/
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--app-bg-color);
+  background-image: var(--app-bg-image);
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text-primary);
+}
