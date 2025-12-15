@@ -39,8 +39,8 @@ const projects = [
     description:
       'Plataforma web que digitaliza el proceso del taller de joyeria artesanal: pedidos, catalogos, gestion de insumos y flujo creativo en un mismo lugar.',
     technologies: ['Vue', 'Laravel', 'Tailwind'],
-    linkDemo: 'https://github.com/OrtegaNidddd/jewelry_workshop',
-    linkRepo: 'https://github.com/OrtegaNidddd/jewelry_workshop',
+    linkDemo: 'https://gist.github.com/OrtegaNidddd/b3677749dca95e35a247fcca2896dc1f',
+    linkRepo: 'https://gist.github.com/OrtegaNidddd/b3677749dca95e35a247fcca2896dc1f',
     status: 'En progreso',
     scope: 'Producto fullstack para taller joyero artesanal',
     categories: ['personal', 'academic']
