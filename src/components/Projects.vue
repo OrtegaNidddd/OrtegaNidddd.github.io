@@ -35,37 +35,48 @@ const projects = [
     categories: ['sold']
   },
   {
+    title: 'AURUM Landing Page',
+    description:
+      'Landing page para AURUM, plataforma web que digitaliza el proceso del taller de joyeria artesanal: gestion de pedidos, reportes y flujo en un mismo lugar.',
+    technologies: ['Next.js', 'Tailwind'],
+    linkDemo: 'https://aurumapp.site',
+    linkRepo: 'https://github.com/OrtegaNidddd/aurum-landing',
+    status: 'Implementado',
+    scope: 'Landing page para plataforma web AURUM',
+    categories: ['personal']
+  },
+  {
     title: 'AURUM',
     description:
-      'Plataforma web que digitaliza el proceso del taller de joyeria artesanal: pedidos, catalogos, gestion de insumos y flujo creativo en un mismo lugar.',
-    technologies: ['Vue', 'Laravel', 'Tailwind'],
-    linkDemo: 'https://gist.github.com/OrtegaNidddd/b3677749dca95e35a247fcca2896dc1f',
-    linkRepo: 'https://gist.github.com/OrtegaNidddd/b3677749dca95e35a247fcca2896dc1f',
+      'Plataforma web que digitaliza el proceso del taller de joyeria artesanal: gestion de pedidos, reportes y flujo en un mismo lugar.',
+    technologies: ['React', 'Laravel', 'Tailwind'],
+    linkDemo: 'https://github.com/OrtegaNidddd/aurum',
+    linkRepo: 'https://github.com/OrtegaNidddd/aurum',
     status: 'En progreso',
     scope: 'Producto fullstack para taller joyero artesanal',
-    categories: ['personal', 'academic']
+    categories: ['personal']
   },
   {
     title: 'Gestor de imagenes',
     description:
-      'Suite de utilidades para convertir, redimensionar y comprimir imagenes con perfiles preconfigurados para contenido institucional.',
+      'Suite de utilidades para convertir y comprimir imagenes con perfiles preconfigurados para contenido institucional.',
     technologies: ['Laravel', 'Tailwind', 'JavaScript'],
     linkDemo: 'https://forestgreen-partridge-240286.hostingersite.com/',
     linkRepo: 'https://github.com/OrtegaNidddd/conversor-imagenes',
     status: 'Completado',
     scope: 'Herramienta personal para acelerar despliegues de contenido',
-    categories: ['personal']
+    categories: ['academic']
   },
   {
     title: 'Generador de codigos QR',
     description:
-      'Aplicacion web que crea codigos QR personalizables con vista previa en tiempo real, descarga inmediata y controles de contraste.',
+      'Aplicacion web que crea codigos QR sencillos con vista previa en tiempo real, descarga inmediata y controles de contraste.',
     technologies: ['Laravel', 'Tailwind'],
     linkDemo: 'https://darkorchid-hedgehog-545748.hostingersite.com/',
     linkRepo: 'https://github.com/OrtegaNidddd/conversor-imagenes',
     status: 'Completado',
-    scope: 'Microservicio para campanas de marketing y material impreso',
-    categories: ['personal']
+    scope: 'Microservicio para campañas de marketing y material impreso',
+    categories: ['academic']
   }
 ]
 
